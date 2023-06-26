@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.main-image{
+    background: url("imagenes/forest.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;/*ancho*/
+    min-height: 100vh;/*alto*/
+    display: flex;/*indica que vamos a traajar con esa propiedad*/
+    flex-direction: column;/*para acomodar todo en una columna*/
+    align-items: center;/*centrar*/
+    justify-content: center;/*Lo pone al centro de la columna*/
+    padding: 0 1rem; /*El 0 es el espacio proporcionado en la parte superior e inferior mientras que el 1rem es el valor del relleno tanto del espacio derecho como del izquierdo*//*El valor 1rem indica que se está utilizando una unidad de medida relativa. En este caso, rem (rootem) se basa en el tamaño de fuente establecido en el elemento raíz o en el elemento HTML. Por ejemplo, i el tamaño de fuente del elemento raíz es de 16 píxeles, entonces 1rem será igual a 16 píxeles.*/
+    text-align: center;
+}
+
+.main-image h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.main-image h1 .strike{
+    text-decoration: line-through;
+}
+
+.main-image p{
+   font-size: 1.5rem;
+   margin-bottom: 3rem;
+}
+
+.main-image .btn{/*Boton*/
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;/*Texto en mayuscula*/
+    font-weight: bold; 
+    cursor: pointer; /*cambia el cursor*/
+}
